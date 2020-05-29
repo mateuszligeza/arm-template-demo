@@ -18,15 +18,12 @@ It creates:
   - [VS Code Extension - Azure Resource Manager (ARM) Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools) - this is really esential as it adds IntelliSense to the arm template that is edited  
 - [Azure Cli](https://aka.ms/installazurecliwindows)
 
-  You can Install `Azure CLI` with [Chocolatey](https://chocolatey.org/docs/commandsinstall)  (requires admin permissions)
-  
-    ```
-    choco install azure-cli -y
-    ```
-
+  > You can Install `Azure CLI` with [Chocolatey](https://chocolatey.org/docs/commandsinstall) (requires admin permissions)
+  >```
+  >choco install azure-cli -y
+  >```
 
 ## Deployment Steps
-
 
 - open PowerShell in `infrastructure` folder
 
@@ -106,6 +103,12 @@ When using extensions one has to be mindful of the other dependencies as noted i
 
 ---
 
+You can use the Azure PowerShell as well `choco install azurepowershell` but it seams that the support for it is [dropping soon (AzureRM is deprecated)](https://docs.microsoft.com/en-au/powershell/azure/new-azureps-module-az?view=azps-3.8.0&viewFallbackFrom=azps-3.7.0) the never version (Az) should be used instead `choco install az.powershell` 
+
+[Differences between Azure CLI products](https://docs.microsoft.com/en-au/cli/azure/cli-versioning-identifiers?view=azure-cli-latest)  
+
+---
+
 ## Learning resources
 [ARM template - docs home page](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/)  
 [Structure and syntax of ARM templates](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-syntax)  
@@ -123,4 +126,3 @@ When using extensions one has to be mindful of the other dependencies as noted i
 [Automating Azure Instrumentation and Monitoring – Part 2: Application Insights](https://blog.kloud.com.au/2018/11/29/automating-azure-instrumentation-and-monitoring-part-2-application-insights/)  
 [Deploying a WebApp with Application Insights using ARM](https://winterdom.com/2017/08/01/aiarm)  
 [Creating a Go Site Extension and Resource Template for Azure](http://www.wadewegner.com/2015/01/creating-a-go-site-extension-and-resource-template-for-azure/)  
-[Differences between Azure CLI products](https://docs.microsoft.com/en-au/cli/azure/cli-versioning-identifiers?view=azure-cli-latest)  
