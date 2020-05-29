@@ -16,15 +16,17 @@ It creates:
 - [VS Code](https://code.visualstudio.com/download)
   - [VS Code Extension - ARM Template Viewer](https://marketplace.visualstudio.com/items?itemName=bencoleman.armview) - used to visualise the template. Sometimes give parsing error, but it tends to go away on next try ¯\_(ツ)_/¯
   - [VS Code Extension - Azure Resource Manager (ARM) Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools) - this is really esential as it adds IntelliSense to the arm template that is edited  
-- [Chocolatey](https://chocolatey.org/docs/installation)
+- [Azure Cli](https://aka.ms/installazurecliwindows)
+
+  You can Install `Azure CLI` with [Chocolatey](https://chocolatey.org/docs/commandsinstall)  (requires admin permissions)
+  
+    ```
+    choco install azure-cli -y
+    ```
+
 
 ## Deployment Steps
-- [Install](https://chocolatey.org/docs/commandsinstall) `Azure CLI` with Chocolatey (requires admin permissions)
 
-```
-choco install azure-cli -y
-```
-> you can use the azure powershell as well `choco install azurepowershell` but it seams that the support for it is [dropping soon (AzureRM is deprecated)](https://docs.microsoft.com/en-au/powershell/azure/new-azureps-module-az?view=azps-3.8.0&viewFallbackFrom=azps-3.7.0) the never version (Az) should be used instead `choco install az.powershell` 
 
 - open PowerShell in `infrastructure` folder
 
