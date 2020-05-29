@@ -9,7 +9,7 @@ It creates:
 
 ## Architecture diagram
 
-![Architecture diagram](.\img\diagram.png)
+![Architecture diagram](img/diagram.PNG)
 
 ## Prerequisites
 - Azure Subscription
